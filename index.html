@@ -3,1047 +3,269 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ESYVO — Digital. AI. Growth.</title>
-
-<meta name="description" content="ESYVO provides digital services, AI solutions, automation, web development, marketing and business growth solutions.">
-
+<meta name="description" content="ESYVO is a digital and AI company helping businesses build, automate and grow.">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2306090f'/%3E%3Ctext x='50' y='67' text-anchor='middle' font-size='48' font-family='Arial' font-weight='bold' fill='%235b8cff'%3EE%3C/text%3E%3C/svg%3E">
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#070b12;
-    color:#fff;
-    line-height:1.6;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-/* HEADER */
-
-header{
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
-    background:rgba(7,11,18,.85);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.navbar{
-    height:75px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:900;
-    letter-spacing:4px;
-}
-
-.logo span{
-    color:#65f5c2;
-}
-
-.nav-links{
-    display:flex;
-    gap:30px;
-    list-style:none;
-}
-
-.nav-links a{
-    color:#aeb8c7;
-    font-size:14px;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#65f5c2;
-}
-
-.nav-btn{
-    background:#65f5c2;
-    color:#06100d;
-    padding:11px 18px;
-    border-radius:10px;
-    font-weight:bold;
-}
-
-/* HERO */
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    padding-top:75px;
-    background:
-    radial-gradient(circle at 80% 20%,rgba(101,245,194,.12),transparent 30%),
-    radial-gradient(circle at 20% 80%,rgba(100,130,255,.10),transparent 30%);
-}
-
-.hero-content{
-    max-width:850px;
-}
-
-.badge{
-    display:inline-block;
-    padding:8px 14px;
-    border:1px solid rgba(101,245,194,.3);
-    border-radius:50px;
-    color:#65f5c2;
-    font-size:13px;
-    margin-bottom:25px;
-}
-
-.hero h1{
-    font-size:clamp(45px,7vw,82px);
-    line-height:1;
-    letter-spacing:-4px;
-    margin-bottom:25px;
-}
-
-.gradient{
-    background:linear-gradient(90deg,#65f5c2,#829cff);
-    -webkit-background-clip:text;
-    color:transparent;
-}
-
-.hero p{
-    max-width:680px;
-    color:#9da9b9;
-    font-size:19px;
-    margin-bottom:35px;
-}
-
-.buttons{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:14px 22px;
-    border-radius:12px;
-    font-weight:bold;
-    display:inline-block;
-    transition:.3s;
-}
-
-.btn-primary{
-    background:#65f5c2;
-    color:#06100d;
-}
-
-.btn-primary:hover{
-    transform:translateY(-3px);
-}
-
-.btn-secondary{
-    border:1px solid #344150;
-    color:#fff;
-}
-
-.btn-secondary:hover{
-    border-color:#65f5c2;
-}
-
-/* SECTIONS */
-
-section{
-    padding:100px 0;
-}
-
-.section-label{
-    color:#65f5c2;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    font-size:12px;
-    font-weight:bold;
-}
-
-.section-title{
-    font-size:45px;
-    line-height:1.1;
-    margin:15px 0;
-}
-
-.section-description{
-    color:#9da9b9;
-    max-width:700px;
-}
-
-/* SERVICES */
-
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-    margin-top:45px;
-}
-
-.service-card{
-    background:#0c131d;
-    border:1px solid #1c2937;
-    border-radius:20px;
-    padding:28px;
-    transition:.3s;
-}
-
-.service-card:hover{
-    transform:translateY(-6px);
-    border-color:#65f5c2;
-}
-
-.service-icon{
-    font-size:30px;
-    margin-bottom:18px;
-}
-
-.service-card h3{
-    margin-bottom:10px;
-}
-
-.service-card p{
-    color:#8f9aaa;
-    font-size:14px;
-}
-
-/* ABOUT */
-
-.about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
-.about-box{
-    background:#0c131d;
-    border:1px solid #1c2937;
-    border-radius:25px;
-    padding:40px;
-}
-
-.about-box p{
-    color:#9da9b9;
-    margin-top:15px;
-}
-
-.values{
-    margin-top:25px;
-    display:grid;
-    gap:15px;
-}
-
-.value{
-    border-left:3px solid #65f5c2;
-    padding-left:15px;
-}
-
-/* PROCESS */
-
-.process-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-    margin-top:45px;
-}
-
-.process-card{
-    padding:28px;
-    background:#0c131d;
-    border:1px solid #1c2937;
-    border-radius:20px;
-}
-
-.number{
-    color:#65f5c2;
-    font-weight:bold;
-    font-size:14px;
-}
-
-.process-card h3{
-    margin:15px 0 8px;
-}
-
-.process-card p{
-    color:#8f9aaa;
-    font-size:14px;
-}
-
-/* CTA */
-
-.cta{
-    background:linear-gradient(135deg,#0d1b25,#0b131d);
-    border:1px solid #223242;
-    border-radius:30px;
-    padding:70px 40px;
-    text-align:center;
-}
-
-.cta h2{
-    font-size:45px;
-    margin-bottom:15px;
-}
-
-.cta p{
-    color:#9da9b9;
-    max-width:600px;
-    margin:0 auto 30px;
-}
-
-/* CONTACT */
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-}
-
-.contact-box{
-    background:#0c131d;
-    border:1px solid #1c2937;
-    border-radius:25px;
-    padding:35px;
-}
-
-.contact-box p{
-    color:#9da9b9;
-    margin:12px 0;
-}
-
-.contact-info{
-    margin-top:25px;
-}
-
-.contact-info a{
-    color:#65f5c2;
-    transition:.3s;
-}
-
-.contact-info a:hover{
-    opacity:.8;
-}
-
-.whatsapp-btn{
-    margin-top:20px;
-}
-
-/* FORM */
-
-form{
-    display:grid;
-    gap:14px;
-}
-
-input,
-textarea,
-select{
-    width:100%;
-    background:#071019;
-    border:1px solid #293746;
-    color:white;
-    padding:14px;
-    border-radius:10px;
-    font-family:inherit;
-    outline:none;
-}
-
-input:focus,
-textarea:focus,
-select:focus{
-    border-color:#65f5c2;
-}
-
-textarea{
-    min-height:140px;
-    resize:vertical;
-}
-
-button{
-    border:none;
-    cursor:pointer;
-    font-size:15px;
-}
-
-/* FOOTER */
-
-footer{
-    border-top:1px solid #1c2937;
-    padding:35px 0;
-    color:#788697;
-}
-
-.footer-content{
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-/* MOBILE */
-
-@media(max-width:850px){
-
-    .nav-links{
-        display:none;
-    }
-
-    .services-grid{
-        grid-template-columns:1fr;
-    }
-
-    .about{
-        grid-template-columns:1fr;
-    }
-
-    .process-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:550px){
-
-    .hero h1{
-        letter-spacing:-2px;
-    }
-
-    .section-title{
-        font-size:35px;
-    }
-
-    .process-grid{
-        grid-template-columns:1fr;
-    }
-
-    .cta h2{
-        font-size:34px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .about-box,
-    .contact-box{
-        padding:28px;
-    }
-}
+:root{--bg:#06090f;--card:#0c111b;--card2:#101725;--text:#f5f7fb;--muted:#9ca8bb;--blue:#5b8cff;--cyan:#27d8ff;--line:#1c2636;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{max-width:var(--max);margin:auto;padding:0 22px}
+header{position:fixed;top:0;left:0;right:0;z-index:99;background:rgba(6,9,15,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:27px;font-weight:900;letter-spacing:2px}
+.logo span{color:var(--blue)}
+.navlinks{display:flex;gap:28px;color:#c5cede;font-size:14px}
+.navlinks a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:12px;font-weight:700;font-size:14px;border:1px solid var(--line);transition:.25s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#06101a;border:0}
+.btn.dark{background:#0d1420}
+.hero{min-height:100vh;padding:160px 0 90px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px;background:radial-gradient(circle at 75% 30%,rgba(53,116,255,.16),transparent 32%),radial-gradient(circle at 15% 70%,rgba(39,216,255,.08),transparent 30%)}
+.badge{display:inline-block;padding:7px 12px;border:1px solid #263754;border-radius:30px;color:#a9c1ff;background:#0b1320;font-size:12px;margin-bottom:20px}
+h1{font-size:clamp(45px,7vw,78px);line-height:1.02;letter-spacing:-3px;margin-bottom:22px}
+h1 span{background:linear-gradient(90deg,#fff,var(--blue),var(--cyan));-webkit-background-clip:text;color:transparent}
+.hero p{font-size:18px;color:var(--muted);max-width:620px;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.visual{background:linear-gradient(145deg,#101a2b,#080c14);border:1px solid #233149;border-radius:28px;padding:25px;box-shadow:0 30px 90px rgba(0,0,0,.45)}
+.window{border:1px solid #26344c;border-radius:18px;overflow:hidden;background:#080d15}
+.top{padding:13px 16px;border-bottom:1px solid #202c40;color:#728198;font-size:12px}
+.screen{padding:22px}
+.screen h3{font-size:25px;margin-bottom:8px}
+.screen p{font-size:13px;margin:0 0 20px}
+.graph{height:150px;border-radius:15px;background:linear-gradient(145deg,#0e1726,#0a101b);position:relative;overflow:hidden}
+.graph:after{content:"";position:absolute;left:0;right:0;bottom:25px;height:70px;background:linear-gradient(135deg,transparent 5%,#5b8cff 6%,#5b8cff 8%,transparent 9%,transparent 22%,#27d8ff 23%,#27d8ff 25%,transparent 26%,transparent 45%,#5b8cff 46%,#5b8cff 48%,transparent 49%,transparent 68%,#27d8ff 69%,#27d8ff 71%,transparent 72%);opacity:.8}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.stat{background:#0d1420;border:1px solid #1d2a3d;padding:14px;border-radius:12px}
+.stat b{display:block;font-size:18px}.stat small{color:#748197}
+.section{padding:100px 0}
+.section-title{text-align:center;max-width:700px;margin:0 auto 50px}
+.kicker{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:42px;line-height:1.1;margin-bottom:14px}
+.section-title p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(145deg,var(--card),#090e17);border:1px solid var(--line);border-radius:18px;padding:25px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#304462}
+.icon{font-size:28px;margin-bottom:15px}
+.card h3{font-size:19px;margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.points{display:grid;gap:12px;margin-top:25px}
+.point{padding:15px;background:#0c121d;border:1px solid var(--line);border-radius:13px}
+.point b{display:block;margin-bottom:3px}.point span{font-size:13px;color:var(--muted)}
+.ai{background:linear-gradient(135deg,#0b1423,#0a1019);border:1px solid #21324d;border-radius:28px;padding:55px}
+.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.ai ul{list-style:none;display:grid;gap:12px;margin-top:25px}.ai li{color:#cbd5e5}.ai li:before{content:"✓";color:var(--cyan);font-weight:bold;margin-right:10px}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project{min-height:230px;border-radius:18px;padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,#101827,#080d15);display:flex;flex-direction:column;justify-content:flex-end}
+.project:nth-child(2){background:linear-gradient(145deg,#101b31,#090d15)}.project:nth-child(3){background:linear-gradient(145deg,#111d25,#080d14)}
+.project small{color:var(--cyan)}.project h3{font-size:22px;margin:6px 0}.project p{color:var(--muted);font-size:13px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{padding:22px;border:1px solid var(--line);border-radius:17px;background:#0b111b}.num{font-size:12px;color:var(--cyan);font-weight:800}.step h3{margin:8px 0}.step p{font-size:13px;color:var(--muted)}
+.faq{max-width:800px;margin:auto}.faq details{background:#0b111b;border:1px solid var(--line);border-radius:14px;margin-bottom:10px;padding:18px 20px}.faq summary{cursor:pointer;font-weight:700}.faq p{color:var(--muted);font-size:14px;padding-top:12px}
+.cta{background:linear-gradient(135deg,#101b31,#0a121e);border:1px solid #263b5c;border-radius:25px;padding:60px;text-align:center}.cta p{color:var(--muted);max-width:650px;margin:12px auto 25px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-box{padding:30px;border:1px solid var(--line);border-radius:18px;background:#0b111b}.contact-box a{display:block;margin-top:12px;color:#9ec0ff}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#748197;font-size:13px}
+.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){.navlinks{display:none}.hero,.about,.ai-grid,.contact{grid-template-columns:1fr}.hero{padding-top:130px}.grid,.work{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.visual{order:-1}}
+@media(max-width:560px){h1{font-size:46px;letter-spacing:-2px}h2{font-size:32px}.section{padding:75px 0}.grid,.work,.steps{grid-template-columns:1fr}.ai,.cta{padding:30px 22px}.stats{grid-template-columns:1fr 1fr}.stat:last-child{display:none}.hero{gap:35px}}
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-
 <header>
-
-<div class="container navbar">
-
-<a href="#" class="logo">
-ESY<span>VO</span>
-</a>
-
-<ul class="nav-links">
-<li><a href="#services">Services</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#process">Process</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-<a href="#contact" class="nav-btn">
-Get Started
-</a>
-
+<div class="container">
+<nav>
+<a class="logo" href="#">ESY<span>VO</span></a>
+<div class="navlinks">
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#work">Work</a>
+<a href="#process">Process</a>
+<a href="#contact">Contact</a>
 </div>
-
+<a class="btn primary" href="https://wa.me/923208290996">Let's Talk</a>
+</nav>
+</div>
 </header>
 
-
-<!-- HERO -->
+<main>
 
 <section class="hero">
-
 <div class="container">
-
-<div class="hero-content">
-
-<div class="badge">
-Digital Services • AI Solutions • Business Growth
+<div>
+<div class="badge">DIGITAL + AI COMPANY</div>
+<h1>Build smarter.<br><span>Grow faster.</span></h1>
+<p>ESYVO helps ambitious businesses build powerful digital experiences, automate operations with AI, and turn ideas into scalable growth.</p>
+<div class="actions">
+<a class="btn primary" href="#contact">Start a Project →</a>
+<a class="btn dark" href="#services">Explore Services</a>
+</div>
+</div>
 </div>
 
-<h1>
-We build digital experiences that
-<span class="gradient">
-move businesses forward.
-</span>
-</h1>
-
-<p>
-ESYVO helps businesses grow with modern websites,
-digital marketing, AI solutions, automation,
-creative services and powerful digital strategies.
-</p>
-
-<div class="buttons">
-
-<a href="#contact" class="btn btn-primary">
-Start a Project →
-</a>
-
-<a href="#services" class="btn btn-secondary">
-Explore Services
-</a>
-
+<div class="visual">
+<div class="window">
+<div class="top">ESYVO / Growth Dashboard</div>
+<div class="screen">
+<h3>Digital Growth</h3>
+<p>Strategy, technology & AI working together.</p>
+<div class="graph"></div>
+<div class="stats">
+<div class="stat"><b>+84%</b><small>Growth</small></div>
+<div class="stat"><b>3.8x</b><small>ROI</small></div>
+<div class="stat"><b>24/7</b><small>Automation</small></div>
 </div>
-
 </div>
-
 </div>
-
+</div>
 </section>
 
-
-<!-- SERVICES -->
-
-<section id="services">
-
+<section class="section" id="services">
 <div class="container">
-
-<span class="section-label">
-What We Do
-</span>
-
-<h2 class="section-title">
-Everything you need to build,<br>
-market and grow.
-</h2>
-
-<p class="section-description">
-From websites and branding to AI automation and digital marketing,
-ESYVO provides modern digital services designed around your business goals.
-</p>
-
-
-<div class="services-grid">
-
-
-<div class="service-card">
-<div class="service-icon">🌐</div>
-<h3>Web Development</h3>
-<p>
-Modern responsive websites, landing pages,
-business websites and e-commerce solutions.
-</p>
+<div class="section-title">
+<div class="kicker">What We Do</div>
+<h2>Everything you need to grow digitally.</h2>
+<p>From websites and marketing to AI automation, ESYVO brings technology and growth under one roof.</p>
 </div>
-
-
-<div class="service-card">
-<div class="service-icon">🤖</div>
-<h3>AI & Automation</h3>
-<p>
-AI agents, chatbots and intelligent automation
-that reduce manual work and improve business operations.
-</p>
+<div class="grid">
+<div class="card"><div class="icon">🌐</div><h3>Website Development</h3><p>Modern, fast and conversion-focused websites built for your business.</p></div>
+<div class="card"><div class="icon">🛒</div><h3>E-Commerce</h3><p>Powerful online stores designed to attract customers and increase sales.</p></div>
+<div class="card"><div class="icon">📈</div><h3>Digital Marketing</h3><p>Performance-driven strategies that put your brand in front of the right audience.</p></div>
+<div class="card"><div class="icon">🔎</div><h3>SEO</h3><p>Build search visibility, organic traffic and long-term online growth.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Social Media</h3><p>Content and social strategies that build attention, trust and engagement.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Lead Generation</h3><p>Systems designed to find, attract and convert qualified prospects.</p></div>
+<div class="card"><div class="icon">🤖</div><h3>AI Solutions</h3><p>Custom AI-powered solutions that improve efficiency and decision making.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>AI Agents & Automation</h3><p>Automate repetitive workflows and build intelligent 24/7 systems.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>UI/UX & Design</h3><p>Clean, modern interfaces and visuals that make brands memorable.</p></div>
 </div>
-
-
-<div class="service-card">
-<div class="service-icon">📈</div>
-<h3>Digital Marketing</h3>
-<p>
-Growth-focused digital marketing strategies designed
-to increase visibility, traffic and conversions.
-</p>
 </div>
-
-
-<div class="service-card">
-<div class="service-icon">📱</div>
-<h3>Social Media</h3>
-<p>
-Social media strategy, content creation,
-management and brand growth across major platforms.
-</p>
-</div>
-
-
-<div class="service-card">
-<div class="service-icon">🎯</div>
-<h3>Lead Generation</h3>
-<p>
-Business research, prospecting and outreach systems
-to help you discover new opportunities.
-</p>
-</div>
-
-
-<div class="service-card">
-<div class="service-icon">🎨</div>
-<h3>Design & Branding</h3>
-<p>
-Professional branding, UI/UX design, graphics
-and creative digital experiences.
-</p>
-</div>
-
-
-<div class="service-card">
-<div class="service-icon">🛒</div>
-<h3>E-Commerce</h3>
-<p>
-Online stores and digital commerce experiences
-built to turn visitors into customers.
-</p>
-</div>
-
-
-<div class="service-card">
-<div class="service-icon">🔍</div>
-<h3>SEO</h3>
-<p>
-Search engine optimization strategies designed
-to improve organic visibility and long-term growth.
-</p>
-</div>
-
-
-<div class="service-card">
-<div class="service-icon">📊</div>
-<h3>Business Solutions</h3>
-<p>
-Digital systems, data solutions and technology
-designed to make everyday business easier.
-</p>
-</div>
-
-
-</div>
-
-</div>
-
 </section>
 
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<div class="container">
-
-<div class="about">
-
-
-<div class="about-box">
-
-<span class="section-label">
-About ESYVO
-</span>
-
-<h2 class="section-title">
-Technology should make business simpler.
-</h2>
-
-<p>
-ESYVO is a digital services company focused on helping
-businesses build a stronger online presence, attract customers
-and use modern technology more effectively.
-</p>
-
-<p>
-We combine digital services, creative solutions and
-artificial intelligence to help businesses move from
-ideas to real results.
-</p>
-
+<section class="section" id="about">
+<div class="container about">
+<div>
+<div class="kicker">Why ESYVO</div>
+<h2>Technology with a growth mindset.</h2>
+<p class="muted">We don't just build digital products. We combine design, technology, marketing and AI to create solutions that move businesses forward.</p>
+<div class="points">
+<div class="point"><b>🚀 Built for Growth</b><span>Every solution is designed with your business goals in mind.</span></div>
+<div class="point"><b>🤖 AI-First Thinking</b><span>We identify opportunities to automate, optimize and scale.</span></div>
+<div class="point"><b>🎯 Business Focused</b><span>Beautiful technology is good. Technology that produces results is better.</span></div>
 </div>
-
-
-<div class="about-box">
-
-<span class="section-label">
-Our Philosophy
-</span>
-
-<h2 class="section-title">
-Simple. Smart. Scalable.
-</h2>
-
-
-<div class="values">
-
-
-<div class="value">
-<strong>Understand</strong>
-<p>
-We start by understanding your business and goals.
-</p>
 </div>
-
-
-<div class="value">
-<strong>Build</strong>
-<p>
-We create practical digital solutions around your needs.
-</p>
+<div class="card">
+<div class="icon">✦</div>
+<h3>One partner. Multiple capabilities.</h3>
+<p>Instead of managing multiple agencies and freelancers, work with one team for your digital presence, marketing, design and AI transformation.</p>
+<br>
+<a class="btn primary" href="#contact">Work With ESYVO →</a>
 </div>
-
-
-<div class="value">
-<strong>Grow</strong>
-<p>
-We continuously improve your digital presence and systems.
-</p>
 </div>
-
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-
-<!-- PROCESS -->
-
-<section id="process">
-
+<section class="section">
 <div class="container">
-
-<span class="section-label">
-Our Process
-</span>
-
-<h2 class="section-title">
-From idea to impact.
-</h2>
-
-<p class="section-description">
-A simple process designed to keep projects clear,
-efficient and focused on business outcomes.
-</p>
-
-
-<div class="process-grid">
-
-
-<div class="process-card">
-
-<span class="number">
-01
-</span>
-
-<h3>
-Discover
-</h3>
-
-<p>
-We learn about your business, audience and goals.
-</p>
-
+<div class="ai">
+<div class="ai-grid">
+<div>
+<div class="kicker">AI & Automation</div>
+<h2>Make your business work smarter.</h2>
+<p class="muted">AI can handle repetitive work, respond to customers, qualify leads and connect your systems — while your team focuses on what matters.</p>
+<ul>
+<li>AI Customer Support</li>
+<li>AI Sales & Lead Qualification</li>
+<li>Workflow Automation</li>
+<li>AI Agents & Business Assistants</li>
+<li>Custom AI Solutions</li>
+</ul>
 </div>
-
-
-<div class="process-card">
-
-<span class="number">
-02
-</span>
-
-<h3>
-Plan
-</h3>
-
-<p>
-We develop a clear strategy and execution plan.
-</p>
-
+<div class="card">
+<div class="icon">⚙️</div>
+<h3>Automate. Integrate. Scale.</h3>
+<p>We design practical AI systems around your existing business processes — not complicated technology for the sake of technology.</p>
 </div>
-
-
-<div class="process-card">
-
-<span class="number">
-03
-</span>
-
-<h3>
-Build
-</h3>
-
-<p>
-We design and develop the required solution.
-</p>
-
 </div>
-
-
-<div class="process-card">
-
-<span class="number">
-04
-</span>
-
-<h3>
-Grow
-</h3>
-
-<p>
-We optimize, improve and help your business scale.
-</p>
-
 </div>
-
-
 </div>
-
-</div>
-
 </section>
 
-
-<!-- CTA -->
-
-<section>
-
+<section class="section" id="work">
 <div class="container">
+<div class="section-title">
+<div class="kicker">Our Work</div>
+<h2>Digital experiences built to impress.</h2>
+<p>Explore the type of digital products and systems ESYVO can create for modern businesses.</p>
+</div>
+<div class="work">
+<div class="project"><small>WEB DEVELOPMENT</small><h3>Premium Business Website</h3><p>Modern responsive website with conversion-focused UX.</p></div>
+<div class="project"><small>E-COMMERCE</small><h3>Online Store</h3><p>Clean shopping experience built for products and growth.</p></div>
+<div class="project"><small>AI AUTOMATION</small><h3>Smart Business System</h3><p>Automated workflows designed to save time and increase efficiency.</p></div>
+</div>
+</div>
+</section>
 
+<section class="section" id="process">
+<div class="container">
+<div class="section-title">
+<div class="kicker">Our Process</div>
+<h2>Simple process. Serious results.</h2>
+</div>
+<div class="steps">
+<div class="step"><div class="num">01 / DISCOVER</div><h3>Understand</h3><p>We learn about your business, goals, audience and challenges.</p></div>
+<div class="step"><div class="num">02 / STRATEGY</div><h3>Plan</h3><p>We create a clear strategy and roadmap for your project.</p></div>
+<div class="step"><div class="num">03 / BUILD</div><h3>Create</h3><p>Our team designs, develops and implements the solution.</p></div>
+<div class="step"><div class="num">04 / GROW</div><h3>Optimize</h3><p>We improve performance and help your business scale.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="section-title">
+<div class="kicker">FAQ</div>
+<h2>Questions, answered.</h2>
+</div>
+<div class="faq">
+<details><summary>What does ESYVO do?</summary><p>ESYVO is a Digital + AI company offering web development, e-commerce, marketing, SEO, design, lead generation, AI solutions and automation.</p></details>
+<details><summary>Can you build a complete website for my business?</summary><p>Yes. We can handle strategy, UI/UX, development, responsive design and the essential digital setup.</p></details>
+<details><summary>Can ESYVO automate my business?</summary><p>Yes. We can identify repetitive processes and design AI-powered agents and automation workflows around your business.</p></details>
+<details><summary>How do I start a project?</summary><p>Contact us through WhatsApp or email. Tell us what you need and we will discuss the project with you.</p></details>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
 <div class="cta">
-
-<h2>
-Ready to build something better?
-</h2>
-
-<p>
-Whether you need a website, marketing strategy,
-AI automation or a complete digital solution,
-ESYVO is ready to help.
-</p>
-
-<a href="#contact" class="btn btn-primary">
-Let's Talk →
-</a>
-
+<div class="kicker">Let's Build</div>
+<h2>Have an idea? Let's turn it into reality.</h2>
+<p>Tell us about your business, project or problem. We'll help you find the right digital or AI solution.</p>
+<div class="actions" style="justify-content:center">
+<a class="btn primary" href="https://wa.me/923208290996">Chat on WhatsApp →</a>
+<a class="btn dark" href="mailto:forme.mhra@gmail.com">Send Email</a>
 </div>
-
 </div>
-
+<br><br>
+<div class="contact">
+<div class="contact-box"><div class="kicker">Email</div><h3>Let's talk business.</h3><a href="mailto:forme.mhra@gmail.com">forme.mhra@gmail.com</a></div>
+<div class="contact-box"><div class="kicker">WhatsApp</div><h3>Let's discuss your project.</h3><a href="https://wa.me/923208290996">+92 320 8290996</a></div>
+</div>
+</div>
 </section>
 
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-<div class="container">
-
-<div class="contact-grid">
-
-
-<!-- CONTACT INFORMATION -->
-
-<div class="contact-box">
-
-<span class="section-label">
-Contact ESYVO
-</span>
-
-<h2 class="section-title">
-Let's start a conversation.
-</h2>
-
-<p>
-Tell us about your project, business or idea.
-We'll help you find the right digital solution.
-</p>
-
-<p>
-<strong>ESYVO</strong><br>
-Digital Services • AI Solutions • Business Growth
-</p>
-
-
-<div class="contact-info">
-
-<p>
-📧
-<a href="mailto:forme.mhra@gmail.com">
-forme.mhra@gmail.com
-</a>
-</p>
-
-<p>
-💬
-<a href="https://wa.me/923208290996" target="_blank">
-+92 320 8290996
-</a>
-</p>
-
-</div>
-
-
-<a
-href="https://wa.me/923208290996"
-target="_blank"
-class="btn btn-primary whatsapp-btn">
-Chat on WhatsApp →
-</a>
-
-</div>
-
-
-<!-- CONTACT FORM -->
-
-<div class="contact-box">
-
-<form
-action="mailto:forme.mhra@gmail.com"
-method="post"
-enctype="text/plain"
->
-
-<input
-type="text"
-name="Name"
-placeholder="Your Name"
-required
->
-
-<input
-type="email"
-name="Email"
-placeholder="Your Email"
-required
->
-
-<input
-type="text"
-name="Company"
-placeholder="Company / Business"
->
-
-<select name="Service">
-
-<option value="">
-What service do you need?
-</option>
-
-<option>
-Website Development
-</option>
-
-<option>
-AI & Automation
-</option>
-
-<option>
-Digital Marketing
-</option>
-
-<option>
-Social Media
-</option>
-
-<option>
-Lead Generation
-</option>
-
-<option>
-Design & Branding
-</option>
-
-<option>
-E-Commerce
-</option>
-
-<option>
-SEO
-</option>
-
-<option>
-Business Solutions
-</option>
-
-<option>
-Other
-</option>
-
-</select>
-
-
-<textarea
-name="Message"
-placeholder="Tell us about your project..."
-required
-></textarea>
-
-
-<button
-class="btn btn-primary"
-type="submit"
->
-Send Inquiry →
-</button>
-
-</form>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
+</main>
 
 <footer>
-
-<div class="container footer-content">
-
-<div>
-© 2026 ESYVO. All rights reserved.
+<div class="container footer">
+<div><b>ESYVO</b> — Digital. AI. Growth.</div>
+<div>© 2026 ESYVO. All rights reserved.</div>
 </div>
-
-<div>
-Digital. AI. Growth.
-</div>
-
-</div>
-
 </footer>
 
-
 </body>
-  </html>
+</html>
