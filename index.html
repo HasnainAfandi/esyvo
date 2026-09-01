@@ -1,1 +1,1049 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ESYVO — Digital. AI. Growth.</title>
+
+<meta name="description" content="ESYVO provides digital services, AI solutions, automation, web development, marketing and business growth solutions.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#070b12;
+    color:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(7,11,18,.85);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.navbar{
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:900;
+    letter-spacing:4px;
+}
+
+.logo span{
+    color:#65f5c2;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#aeb8c7;
+    font-size:14px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#65f5c2;
+}
+
+.nav-btn{
+    background:#65f5c2;
+    color:#06100d;
+    padding:11px 18px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:75px;
+    background:
+    radial-gradient(circle at 80% 20%,rgba(101,245,194,.12),transparent 30%),
+    radial-gradient(circle at 20% 80%,rgba(100,130,255,.10),transparent 30%);
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 14px;
+    border:1px solid rgba(101,245,194,.3);
+    border-radius:50px;
+    color:#65f5c2;
+    font-size:13px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:clamp(45px,7vw,82px);
+    line-height:1;
+    letter-spacing:-4px;
+    margin-bottom:25px;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#65f5c2,#829cff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    max-width:680px;
+    color:#9da9b9;
+    font-size:19px;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 22px;
+    border-radius:12px;
+    font-weight:bold;
+    display:inline-block;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#65f5c2;
+    color:#06100d;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:1px solid #344150;
+    color:#fff;
+}
+
+.btn-secondary:hover{
+    border-color:#65f5c2;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 0;
+}
+
+.section-label{
+    color:#65f5c2;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.section-title{
+    font-size:45px;
+    line-height:1.1;
+    margin:15px 0;
+}
+
+.section-description{
+    color:#9da9b9;
+    max-width:700px;
+}
+
+/* SERVICES */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:45px;
+}
+
+.service-card{
+    background:#0c131d;
+    border:1px solid #1c2937;
+    border-radius:20px;
+    padding:28px;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-6px);
+    border-color:#65f5c2;
+}
+
+.service-icon{
+    font-size:30px;
+    margin-bottom:18px;
+}
+
+.service-card h3{
+    margin-bottom:10px;
+}
+
+.service-card p{
+    color:#8f9aaa;
+    font-size:14px;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.about-box{
+    background:#0c131d;
+    border:1px solid #1c2937;
+    border-radius:25px;
+    padding:40px;
+}
+
+.about-box p{
+    color:#9da9b9;
+    margin-top:15px;
+}
+
+.values{
+    margin-top:25px;
+    display:grid;
+    gap:15px;
+}
+
+.value{
+    border-left:3px solid #65f5c2;
+    padding-left:15px;
+}
+
+/* PROCESS */
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin-top:45px;
+}
+
+.process-card{
+    padding:28px;
+    background:#0c131d;
+    border:1px solid #1c2937;
+    border-radius:20px;
+}
+
+.number{
+    color:#65f5c2;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.process-card h3{
+    margin:15px 0 8px;
+}
+
+.process-card p{
+    color:#8f9aaa;
+    font-size:14px;
+}
+
+/* CTA */
+
+.cta{
+    background:linear-gradient(135deg,#0d1b25,#0b131d);
+    border:1px solid #223242;
+    border-radius:30px;
+    padding:70px 40px;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    color:#9da9b9;
+    max-width:600px;
+    margin:0 auto 30px;
+}
+
+/* CONTACT */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-box{
+    background:#0c131d;
+    border:1px solid #1c2937;
+    border-radius:25px;
+    padding:35px;
+}
+
+.contact-box p{
+    color:#9da9b9;
+    margin:12px 0;
+}
+
+.contact-info{
+    margin-top:25px;
+}
+
+.contact-info a{
+    color:#65f5c2;
+    transition:.3s;
+}
+
+.contact-info a:hover{
+    opacity:.8;
+}
+
+.whatsapp-btn{
+    margin-top:20px;
+}
+
+/* FORM */
+
+form{
+    display:grid;
+    gap:14px;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    background:#071019;
+    border:1px solid #293746;
+    color:white;
+    padding:14px;
+    border-radius:10px;
+    font-family:inherit;
+    outline:none;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#65f5c2;
+}
+
+textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid #1c2937;
+    padding:35px 0;
+    color:#788697;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:550px){
+
+    .hero h1{
+        letter-spacing:-2px;
+    }
+
+    .section-title{
+        font-size:35px;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta h2{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .about-box,
+    .contact-box{
+        padding:28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#" class="logo">
+ESY<span>VO</span>
+</a>
+
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#process">Process</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<a href="#contact" class="nav-btn">
+Get Started
+</a>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="badge">
+Digital Services • AI Solutions • Business Growth
+</div>
+
+<h1>
+We build digital experiences that
+<span class="gradient">
+move businesses forward.
+</span>
+</h1>
+
+<p>
+ESYVO helps businesses grow with modern websites,
+digital marketing, AI solutions, automation,
+creative services and powerful digital strategies.
+</p>
+
+<div class="buttons">
+
+<a href="#contact" class="btn btn-primary">
+Start a Project →
+</a>
+
+<a href="#services" class="btn btn-secondary">
+Explore Services
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<span class="section-label">
+What We Do
+</span>
+
+<h2 class="section-title">
+Everything you need to build,<br>
+market and grow.
+</h2>
+
+<p class="section-description">
+From websites and branding to AI automation and digital marketing,
+ESYVO provides modern digital services designed around your business goals.
+</p>
+
+
+<div class="services-grid">
+
+
+<div class="service-card">
+<div class="service-icon">🌐</div>
+<h3>Web Development</h3>
+<p>
+Modern responsive websites, landing pages,
+business websites and e-commerce solutions.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-icon">🤖</div>
+<h3>AI & Automation</h3>
+<p>
+AI agents, chatbots and intelligent automation
+that reduce manual work and improve business operations.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-icon">📈</div>
+<h3>Digital Marketing</h3>
+<p>
+Growth-focused digital marketing strategies designed
+to increase visibility, traffic and conversions.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-icon">📱</div>
+<h3>Social Media</h3>
+<p>
+Social media strategy, content creation,
+management and brand growth across major platforms.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-icon">🎯</div>
+<h3>Lead Generation</h3>
+<p>
+Business research, prospecting and outreach systems
+to help you discover new opportunities.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-icon">🎨</div>
+<h3>Design & Branding</h3>
+<p>
+Professional branding, UI/UX design, graphics
+and creative digital experiences.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-icon">🛒</div>
+<h3>E-Commerce</h3>
+<p>
+Online stores and digital commerce experiences
+built to turn visitors into customers.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-icon">🔍</div>
+<h3>SEO</h3>
+<p>
+Search engine optimization strategies designed
+to improve organic visibility and long-term growth.
+</p>
+</div>
+
+
+<div class="service-card">
+<div class="service-icon">📊</div>
+<h3>Business Solutions</h3>
+<p>
+Digital systems, data solutions and technology
+designed to make everyday business easier.
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="about">
+
+
+<div class="about-box">
+
+<span class="section-label">
+About ESYVO
+</span>
+
+<h2 class="section-title">
+Technology should make business simpler.
+</h2>
+
+<p>
+ESYVO is a digital services company focused on helping
+businesses build a stronger online presence, attract customers
+and use modern technology more effectively.
+</p>
+
+<p>
+We combine digital services, creative solutions and
+artificial intelligence to help businesses move from
+ideas to real results.
+</p>
+
+</div>
+
+
+<div class="about-box">
+
+<span class="section-label">
+Our Philosophy
+</span>
+
+<h2 class="section-title">
+Simple. Smart. Scalable.
+</h2>
+
+
+<div class="values">
+
+
+<div class="value">
+<strong>Understand</strong>
+<p>
+We start by understanding your business and goals.
+</p>
+</div>
+
+
+<div class="value">
+<strong>Build</strong>
+<p>
+We create practical digital solutions around your needs.
+</p>
+</div>
+
+
+<div class="value">
+<strong>Grow</strong>
+<p>
+We continuously improve your digital presence and systems.
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section id="process">
+
+<div class="container">
+
+<span class="section-label">
+Our Process
+</span>
+
+<h2 class="section-title">
+From idea to impact.
+</h2>
+
+<p class="section-description">
+A simple process designed to keep projects clear,
+efficient and focused on business outcomes.
+</p>
+
+
+<div class="process-grid">
+
+
+<div class="process-card">
+
+<span class="number">
+01
+</span>
+
+<h3>
+Discover
+</h3>
+
+<p>
+We learn about your business, audience and goals.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<span class="number">
+02
+</span>
+
+<h3>
+Plan
+</h3>
+
+<p>
+We develop a clear strategy and execution plan.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<span class="number">
+03
+</span>
+
+<h3>
+Build
+</h3>
+
+<p>
+We design and develop the required solution.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<span class="number">
+04
+</span>
+
+<h3>
+Grow
+</h3>
+
+<p>
+We optimize, improve and help your business scale.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<h2>
+Ready to build something better?
+</h2>
+
+<p>
+Whether you need a website, marketing strategy,
+AI automation or a complete digital solution,
+ESYVO is ready to help.
+</p>
+
+<a href="#contact" class="btn btn-primary">
+Let's Talk →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="contact-grid">
+
+
+<!-- CONTACT INFORMATION -->
+
+<div class="contact-box">
+
+<span class="section-label">
+Contact ESYVO
+</span>
+
+<h2 class="section-title">
+Let's start a conversation.
+</h2>
+
+<p>
+Tell us about your project, business or idea.
+We'll help you find the right digital solution.
+</p>
+
+<p>
+<strong>ESYVO</strong><br>
+Digital Services • AI Solutions • Business Growth
+</p>
+
+
+<div class="contact-info">
+
+<p>
+📧
+<a href="mailto:forme.mhra@gmail.com">
+forme.mhra@gmail.com
+</a>
+</p>
+
+<p>
+💬
+<a href="https://wa.me/923208290996" target="_blank">
++92 320 8290996
+</a>
+</p>
+
+</div>
+
+
+<a
+href="https://wa.me/923208290996"
+target="_blank"
+class="btn btn-primary whatsapp-btn">
+Chat on WhatsApp →
+</a>
+
+</div>
+
+
+<!-- CONTACT FORM -->
+
+<div class="contact-box">
+
+<form
+action="mailto:forme.mhra@gmail.com"
+method="post"
+enctype="text/plain"
+>
+
+<input
+type="text"
+name="Name"
+placeholder="Your Name"
+required
+>
+
+<input
+type="email"
+name="Email"
+placeholder="Your Email"
+required
+>
+
+<input
+type="text"
+name="Company"
+placeholder="Company / Business"
+>
+
+<select name="Service">
+
+<option value="">
+What service do you need?
+</option>
+
+<option>
+Website Development
+</option>
+
+<option>
+AI & Automation
+</option>
+
+<option>
+Digital Marketing
+</option>
+
+<option>
+Social Media
+</option>
+
+<option>
+Lead Generation
+</option>
+
+<option>
+Design & Branding
+</option>
+
+<option>
+E-Commerce
+</option>
+
+<option>
+SEO
+</option>
+
+<option>
+Business Solutions
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+
+<textarea
+name="Message"
+placeholder="Tell us about your project..."
+required
+></textarea>
+
+
+<button
+class="btn btn-primary"
+type="submit"
+>
+Send Inquiry →
+</button>
+
+</form>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-content">
+
+<div>
+© 2026 ESYVO. All rights reserved.
+</div>
+
+<div>
+Digital. AI. Growth.
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+  </html>
